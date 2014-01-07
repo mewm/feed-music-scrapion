@@ -1,0 +1,19 @@
+{
+  "name": "hipchat-youtube-scraper",
+  "version": "0.0.1",
+  "description": "Scrapes a room chat history for youtube links and converts them to mp3",
+  "main": "scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dennis Micky Jensen",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "hipchatter": "0.0.8",
+    "async": "~0.2.9",
+    "youtube-dl": "~1.3.2",
+    "fluent-ffmpeg": "~1.5.2",
+    "redis": "~0.10.0",
+    "hiredis": "~0.1.16"
+  }
+}
