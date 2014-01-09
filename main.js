@@ -58,12 +58,12 @@ Scrapion.prototype.startYourEngines = function () {
 	self.feeder = this.feedFactory();
 
 	//Get messages
-	self.feeder.getMessages(function(messagess) {
+	self.feeder.getMessages(function(messages) {
 
-		var messages = [
+		/*var messages = [
 			'https://www.youtube.com/watch?v=7V7zLrlX-T0',
 			'https://www.youtube.com/watch?v=vLfAtCbE_Jc'
-		];
+		];*/
 
 		//Loop through messages
 		for(message in messages) {
@@ -79,7 +79,7 @@ Scrapion.prototype.startYourEngines = function () {
 					if(err) throw err;
 
 					if(inCache != null) {
-						console.log('Already downloaded ' + url);
+						//console.log('Already downloaded ' + url);
 					} else {
 
 						//Get downloader
@@ -211,7 +211,7 @@ var Mhipchat = function(apiKey, roomId) {
 	this.notify = function(message) {
 
 		//Send message
-		/*this.hipchatter.notify(config.room,
+		this.hipchatter.notify(config.room,
 			{
 				message: message,
 				color: 'green',
@@ -219,7 +219,7 @@ var Mhipchat = function(apiKey, roomId) {
 			}, function(err){
 				//Done
 			}
-		);*/
+		);
 
 		console.log(message);
 	}
