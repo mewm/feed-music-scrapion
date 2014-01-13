@@ -8,6 +8,4 @@ var config = require('./config.js'),
 var scraper = new Scrapion();
 scraper.startYourEngines();
 
-setInterval(function() {
-	scraper.startYourEngines()
-}, 60000); //1 minute
+
